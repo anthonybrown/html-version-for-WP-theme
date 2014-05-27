@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+	<head>
+
+		<!-- Meta -->
+		<title>Less test</title>
+		<meta charset="utf-8" />
+        
+        <!-- Disable phone number linking -->
+		<meta name="format-detection" content="telephone=no" />     
+        
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+        
+		<!-- Global Stylesheets -->
+		<link rel="stylesheet" href="css/reset.css" media="all" />
+		<link rel="stylesheet" href="css/fonts.css" media="all" />
+		<link rel="stylesheet" href="css/style.css" media="all" />
+        
+		<!-- Fallback if browser does not support media queries + javascript (Read: Internet Explorer 7 - 8) -->
+		<link rel="stylesheet" href="8col.css" media="all" />
+    
+		<!-- Media Queries / LESS -->
+		<link rel="stylesheet" href="css/13col.css" media="only screen and (min-width: 1212px)" />
+		<link rel="stylesheet" href="css/8col.css" media="only screen and (max-width: 1211px) and (min-width: 768px)" />
+		<link rel="stylesheet" href="css/5col.css" media="only screen and (max-width: 767px) and (min-width: 480px)" />
+		<link rel="stylesheet" href="css/3col.css" media="only screen and (max-width: 479px)" />
+		<!--[if (gte IE 6)&(lte IE 8)]>
+		  <script type="text/javascript" src="js/libs/selectivizr.js"></script>
+		<![endif]-->
+
+		<!-- Smartphone stuff -->
+		<meta name="viewport" content="width=device-width; initial-scale=1"/>
+		<!-- Add "maximum-scale=1.0, user-scalable=no" to fix the Mobile Safari auto-zoom bug on orientation changes, but keep in mind that it will 
+					disable user-zooming completely. Bad for accessibility. -->   
+       
+		<!-- Favicons, 16x16 -->
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+        
+		<!-- Fancy Apple icons, 144x144 -->
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/114-icon.png"/> 
+        
+		<!-- Fancy Apple 'fake webapp' support -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<link rel="apple-touch-startup-image" href="images/splash.png">
+                       
+		<!-- Jquery -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+        
+        <!-- Development tool: Less Grid by @RnowM, http://arnaumarch.com/en/less-grid.html -->
+        <script src="js/less-grid-3.js"></script>
+       
+		<!-- Media Queries for IE --> 
+		<script src="js/jquery.mediaqueries1.19.js"></script>
+
+	</head>
+
+	<body>
+		<header class="center">
+			<h1><a href="index.html">Tony Browns Design</a></h1>
+			<h2>web design & development</h2>
+
+			<nav>
+				<ul>
+					<li><a href="index.html">home</a></li>
+					<li><a href="about.html">about</a></li>
+					<li><a href="work.html">categories</a></li>
+					<li class="active"><a href="blog.html">blog</a></li>
+					<li><a href="contact.html">contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="main" class="center">
+
+			<section class="posts blog-style">	
+				<h1>From the Blog</h1>
+				
+				<article class="posts">
+					
+					<div class="main-image"></div>
+					<div class="main-shadow"></div>
+				  	<h2><a href="#">Blog post name here</a></h2>
+					<div class="border-top"></div>
+					<h5>Posted in Design | December 19th, 2011 |<a class="right-indent" href="#">5 Comments</a></h5>
+					<div class="border-bottom"></div>		
+					<p>
+					    You know I am a big a Samuel L Jackson fan. He is one of my favorite actors of all times, his roles are as 
+						diverse as he is. I really became a fan after seeing this interview with him and one of those actor talk 
+						shows where the host asks the actor or actress a bunch of well thought out  questions that deep into the life 
+						of the actor and tries to open them up to the audience.I am using the slipum 
+						generator that produces high quality text that is true the Samuel Jackson dialog in his movies, so hold on to 
+						your butts, here comes some shit!
+					</p>
+					<a class="read" href="#">Read On <span class="special">&raquo;</span></a>
+
+				</article>
+
+				<article class="posts">
+					
+					<div class="main-image"></div>
+					<div class="main-shadow"></div>
+				  	<h2><a href="#">Blog post name here</a></h2>
+					<div class="border-top"></div>
+					<h5>Posted in Design | December 19th, 2011 |<a class="right-indent" href="#">5 Comments</a></h5>
+					<div class="border-bottom"></div>		
+					<p>
+					    You know I am a big a Samuel L Jackson fan. He is one of my favorite actors of all times, his roles are as 
+						diverse as he is. I really became a fan after seeing this interview with him and one of those actor talk 
+						shows where the host asks the actor or actress a bunch of well thought out  questions that deep into the life 
+						of the actor and tries to open them up to the audience.I am using the slipum 
+						generator that produces high quality text that is true the Samuel Jackson dialog in his movies, so hold on to 
+						your butts, here comes some shit!
+					</p>
+					<a class="read" href="#">Read On <span class="special">&raquo;</span></a>
+
+				</article>
+
+				<article class="posts">
+					
+					<div class="main-image"></div>
+					<div class="main-shadow"></div>
+				  	<h2><a href="#">Blog post name here</a></h2>
+					<div class="border-top"></div>
+					<h5>Posted in Design | December 19th, 2011 |<a class="right-indent" href="#">5 Comments</a></h5>
+					<div class="border-bottom"></div>		
+					<p>
+					    You know I am a big a Samuel L Jackson fan. He is one of my favorite actors of all times, his roles are as 
+						diverse as he is. I really became a fan after seeing this interview with him and one of those actor talk 
+						shows where the host asks the actor or actress a bunch of well thought out  questions that deep into the life 
+						of the actor and tries to open them up to the audience.I am using the slipum 
+						generator that produces high quality text that is true the Samuel Jackson dialog in his movies, so hold on to 
+						your butts, here comes some shit!
+					</p>
+					<a class="read" href="#">Read On <span class="special">&raquo;</span></a>
+
+				</article>
+				
+			</section><!-- end Posts-Blog-Styles -->	
+
+			<aside>
+				<form class="sidebar">
+					<p>
+						<label for="search">Label</label><input type="text" name="search" value="" id="search" 
+						placeholder="Search . . " />
+					</p>
+					<button>Search</button>
+				</form>
+
+				<article class="categories">
+					<h2>Categories</h2>
+					<ul class="categories">
+						<li><a href="#"><h4>Logos</h4></a></li>
+						<li><a href="#"><h4>Themes</h4></a></li>
+						<li><a href="#"><h4>Inspiration</h4></a></li>
+						<li><a href="#"><h4>Design</h4></a></li>
+						<li><a href="#"><h4>Development</h4></a></li>
+						<li><a href="#"><h4>UX | UI | IA</h4></a></li>
+					</ul>
+				</article>
+
+				<article class="comments">
+					<h2>Recent Comments</h2>
+						<ul class="comments">	
+							<div class="commment-box"></div>
+								<li>
+									<p>
+										Frank Kane on Modern CSS techniques:<cite>The problem is as always browser inconsistency</cite>
+									</p>
+								</li>
+							<div class="commment-box"></div>
+								<li>
+									<p>
+										Bob Smith on jQuery tabs:<cite>This makes my life easier, thanks for sharing !</cite>
+									</p>
+								</li>
+							<div class="commment-box"></div>
+								<li>
+									<p>
+										Patty Mayo on Doug Funny :<cite>I love Doug Funny and the Nick Toons channel</cite>	
+									</p>
+								</li>
+						</ul>
+				</article>
+
+				<article class="fb-img">
+					<h2>Photos on Facebook</h2>
+					<ul class="fb-img">
+						<li class="fb-img"><a href="#"><img class="fb-img" src="img/thumbs_features/75x75/75 x 75_01.jpg" alt="images on tonybrowndesign 
+							Facebook wall" /></a></li>
+						<li class="fb-img"><a href="#"><img class="fb-img" src="img/thumbs_features/75x75/75 x 75_02.jpg" alt="images on tonybrowndesign 
+							Facebook wall" /></a></li>
+						<li class="fb-img"><a href="#"><img class="fb-img" src="img/thumbs_features/75x75/75 x 75_03.jpg" alt="images on tonybrowndesign 
+							Facebook wall" /></a></li>
+						<li class="fb-img"><a href="#"><img class="fb-img" src="img/thumbs_features/75x75/75 x 75_04.jpg" alt="images on tonybrowndesign 
+							Facebook wall" /></a></li>
+						<li class="fb-img"><a href="#"><img class="fb-img" src="img/thumbs_features/75x75/75 x 75_05.jpg" alt="images on tonybrowndesign 
+							Facebook wall" /></a></li>
+						<li class="fb-img"><a href="#"><img class="fb-img" src="img/thumbs_features/75x75/75 x 75_06.jpg" alt="images on tonybrowndesign 
+							Facebook wall" /></a></li>
+						<li class="fb-img"><a href="#"><img class="fb-img" src="img/thumbs_features/75x75/75 x 75_07.jpg" alt="images on tonybrowndesign 
+							Facebook wall" /></a></li>
+						<li class="fb-img"><a href="#"><img class="fb-img" src="img/thumbs_features/75x75/75 x 75_08.jpg" alt="images on tonybrowndesign 
+							Facebook wall" /></a></li>
+						<li class="fb-img"><a href="#"><img class="fb-img" src="img/thumbs_features/75x75/75 x 75_09.jpg" alt="images on tonybrowndesign 
+							Facebook wall" /></a></li>
+					</ul>
+				</article>
+			</aside>
+		</div><!-- end main -->
+
+		<div class="footer-wrap">
+			<footer class="center">
+				<section class="recent-projects footer-col center">
+					<h3>Recent Projects</h3>
+					<ul>
+						<li>
+							<a href="#"><img src="img/thumbs_features/75x75/img1.jpg" alt="Recent Work" /></a>
+							<h5>This is the latest photo manipulation I did </h5>
+							<p class="foot-meta">Posted in Photoshop | <span class="foot-meta">March 3rd 2010</span></p>
+						</li>
+						<li>
+							<a href="#"><img src="img/thumbs_features/75x75/img2.jpg" alt="Recent Work" /></a>
+							<h5>Another title about.. </h5>
+							<p class="foot-meta">Posted in Design | <span class="foot-meta">February 28th</span></p>
+						</li>
+						<li>
+							<a href="#"><img src="img/thumbs_features/75x75/img3.jpg" alt="Recent Work" /></a>
+							<h5>Usability issues with your site ?</h5>
+							<p class="foot-meta">Posted in Photoshop | <span class="foot-meta">March 3rd 2010</span></p>
+						</li>
+						<li>
+							<a href="#"><img src="img/thumbs_features/75x75/img4.jpg" alt="Recent Work" /></a>
+							<h5>Wordpress hierarchy </h5>
+							<p class="foot-meta">Posted in Design | <span class="foot-meta">February 28th</span></p>
+						</li>
+					</ul>
+					<button>Portfolio</button>
+				</section>
+				<section class="twitter-section footer-col center">
+				  <h3>Twitter Stream</h3>
+					<ul>
+						<li>
+							<p>
+								The path of the righteous man is beset on all sides by the iniquities of the selfish and the 
+								tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak 
+								through the valley of darkness, for he is truly his brother's keeper and the finder of lost 
+								children.<span><a href="#">1 hour ago</a>, via TweetDeck</span>
+							</p>
+						</li>
+						<li>
+							<p>
+								And I will strike down upon thee with great vengeance and furious anger those who would attempt 
+								to poison and destroy My brothers. And you will know My name is the <a href="#">LORD </a>when I 
+								lay My vengeance upon thee.<span><a href="#">1 hour ago</a>, via TweetDeck</span>
+							</p>
+						</li>
+
+						<li>
+							<p>
+								And I will strike down upon thee with great vengeance and furious anger those who would 
+								attempt to poison and destroy My brothers. And you will know My name is the LORD 
+								when I lay My vengeance upon thee.<span><a href="#">1 hour ago</a>, via TweetDeck</span>
+							</p>
+						</li>
+
+					</ul>
+					<button>Follow us</button>
+				</section>
+				<section class="quote-section footer-col center">
+					<h3>Get a free quote</h3>
+					<form action="form.php" method="post">
+						<input type="text" name="name" id="footer-name" value="Name:" />
+						<input type="text" name="email" id="footer-email" value="Email:" />
+						<textarea name="projectDetails" >Your Projects Details</textarea>
+						<input type="text" name="timeframe" id="time" value="Your TimeFrame:" />
+
+						<button>Submit !</button>
+					</form>
+				</section>
+
+
+			</footer>
+		</div><!-- end footer-wrap -->
+		<div id="siteInfo">
+			<footer class="center">
+				<h6>Copyright © 2011 -- Website Name Here -- All Rights Reserved</h6>
+				<p>Made by: Tony Brown</p>
+				<nav>
+					<ul class="footer-nav">
+						<li><a class="active" href="index.html">home</a></li>
+						<li><a href="about.html">about</a></li>
+						<li><a href="#">categories</a></li>
+						<li><a href="#">gallery</a></li>
+						<li><a class="last" href="#">contact</a></li>
+					</ul>
+				</nav>
+				<p>This site is set up so that it will take content dynamically and will not ruin the layout</p>				
+			</footer>
+		</div>
+	</body>
+	
+</html>

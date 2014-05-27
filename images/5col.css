@@ -1,0 +1,1222 @@
+/*
+Theme Name: Theme One
+Theme URI: http://www.tonybrownsdesign.com
+Author: Anthony Brown
+Author URI: http://www.tonybrownsdesign.com
+Description: HTML 5, CSS3, Clean modern design elements, responsive design, custom fonts, white, 
+Version: 1.2
+Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, right-sidebar, fixed-width, flexible-width, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+*/
+
+/*=================================================
+	@Font-face
+===================================================*/
+@font-face {
+    /* This declaration targets Internet Explorer */
+    font-family: 'ProximaNovaExtraCondensedThin';
+    src: url('proxima_nova_excn_thin-webfont.eot');
+}
+
+@font-face {
+    /* This declaration targets everything else */
+    font-family: 'ProximaNovaExtraCondensedThin';
+    src: url(//:) format('no404'), url('proxima_nova_excn_thin-webfont.woff') format('woff'), url('proxima_nova_excn_thin-webfont.ttf') format('truetype'), url('proxima_nova_excn_thin-webfont.svg#ProximaNovaExtraCondensedThin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    /* This declaration targets Internet Explorer */
+    font-family: 'PillGothic600mgRegular';
+    src: url('pill_gothic_600mg_regular-webfont.eot');
+}
+
+@font-face {
+    /* This declaration targets everything else */
+    font-family: 'PillGothic600mgRegular';
+    src: url(//:) format('no404'), url('pill_gothic_600mg_regular-webfont.woff') format('woff'), url('pill_gothic_600mg_regular-webfont.ttf') format('truetype'), url('pill_gothic_600mg_regular-webfont.svg#PillGothic600mgRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    /* This declaration targets Internet Explorer */
+    font-family: 'PoliticaThinRegular';
+    src: url('politica_thin-webfont.eot');
+}
+
+@font-face {
+    /* This declaration targets everything else */
+    font-family: 'PoliticaThinRegular';
+    src: url(//:) format('no404'), url('politica_thin-webfont.woff') format('woff'), url('politica_thin-webfont.ttf') format('truetype'), url('politica_thin-webfont.svg#PoliticaThinRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    /* This declaration targets Internet Explorer */
+    font-family: 'PillGothic600mgLightObq';
+    src: url('pillgothic600mg-lightobq-webfont.eot');
+}
+
+@font-face {
+    /* This declaration targets everything else */
+    font-family: 'PillGothic600mgLightObq';
+    src: url(//:) format('no404'), url('pillgothic600mg-lightobq-webfont.woff') format('woff'), url('pillgothic600mg-lightobq-webfont.ttf') format('truetype'), url('pillgothic600mg-lightobq-webfont.svg#PillGothic600mgLightObq') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    /* This declaration targets Internet Explorer */
+    font-family: 'ProximaNovaRegularItalic';
+    src: url('proxima_nova_reg_it-webfont.eot');
+}
+
+@font-face {
+    /* This declaration targets everything else */
+    font-family: 'ProximaNovaRegularItalic';
+    src: url(//:) format('no404'), url('proxima_nova_reg_it-webfont.woff') format('woff'), url('proxima_nova_reg_it-webfont.ttf') format('truetype'), url('proxima_nova_reg_it-webfont.svg#ProximaNovaRegularItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    /* This declaration targets Internet Explorer */
+    font-family: 'ProximaNovaLight';
+    src: url('proxima_nova_light-webfont.eot');
+}
+
+@font-face {
+    /* This declaration targets everything else */
+    font-family: 'ProximaNovaLight';
+    src: url(//:) format('no404'), url('proxima_nova_light-webfont.woff') format('woff'), url('proxima_nova_light-webfont.ttf') format('truetype'), url('proxima_nova_light-webfont.svg#ProximaNovaLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    /* This declaration targets Internet Explorer */
+    font-family: 'ProximaNovaThin';
+    src: url('proxima_nova_thin-webfont.eot');
+}
+
+@font-face {
+    /* This declaration targets everything else */
+    font-family: 'ProximaNovaThin';
+    src: url(//:) format('no404'), url('proxima_nova_thin-webfont.woff') format('woff'), url('proxima_nova_thin-webfont.ttf') format('truetype'), url('proxima_nova_thin-webfont.svg#ProximaNovaThin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    /* This declaration targets Internet Explorer */
+    font-family: 'ProximaNovaRegular';
+    src: url('proxima_nova_reg-webfont.eot');
+}
+
+@font-face {
+    /* This declaration targets everything else */
+    font-family: 'ProximaNovaRegular';
+    src: url(//:) format('no404'), url('proxima_nova_reg-webfont.woff') format('woff'), url('proxima_nova_reg-webfont.ttf') format('truetype'), url('proxima_nova_reg-webfont.svg#ProximaNovaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    /* This declaration targets Internet Explorer */
+    font-family: 'ProximaNovaExtraCondensedThin';
+    src: url('proxima_nova_excn_thin-webfont.eot');
+}
+
+@font-face {
+    /* This declaration targets everything else */
+    font-family: 'ProximaNovaExtraCondensedThin';
+    src: url(//:) format('no404'), url('proxima_nova_excn_thin-webfont.woff') format('woff'), url('proxima_nova_excn_thin-webfont.ttf') format('truetype'), url('proxima_nova_excn_thin-webfont.svg#ProximaNovaExtraCondensedThin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    /* This declaration targets Internet Explorer */
+    font-family: 'ProximaNovaExtraCondensedThIt';
+    src: url('proxima_nova_excn_thin_it-webfont.eot');
+}
+
+@font-face {
+    /* This declaration targets everything else */
+    font-family: 'ProximaNovaExtraCondensedThIt';
+    src: url(//:) format('no404'), url('proxima_nova_excn_thin_it-webfont.woff') format('woff'), url('proxima_nova_excn_thin_it-webfont.ttf') format('truetype'), url('proxima_nova_excn_thin_it-webfont.svg#ProximaNovaExtraCondensedThIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    /* This declaration targets Internet Explorer */
+    font-family: 'ProximaNovaExtraCondensedRg';
+    src: url('proxima_nova_excn_reg-webfont.eot');
+}
+
+@font-face {
+    /* This declaration targets everything else */
+    font-family: 'ProximaNovaExtraCondensedRg';
+    src: url(//:) format('no404'), url('proxima_nova_excn_reg-webfont.woff') format('woff'), url('proxima_nova_excn_reg-webfont.ttf') format('truetype'), url('proxima_nova_excn_reg-webfont.svg#ProximaNovaExtraCondensedRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    /* This declaration targets Internet Explorer */
+    font-family: 'ProximaNovaExtraCondensedBdIt';
+    src: url('proxima_nova_excn_bold_it-webfont.eot');
+}
+
+@font-face {
+    /* This declaration targets everything else */
+    font-family: 'ProximaNovaExtraCondensedBdIt';
+    src: url(//:) format('no404'), url('proxima_nova_excn_bold_it-webfont.woff') format('woff'), url('proxima_nova_excn_bold_it-webfont.ttf') format('truetype'), url('proxima_nova_excn_bold_it-webfont.svg#ProximaNovaExtraCondensedBdIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    /* This declaration targets Internet Explorer */
+    font-family: 'PoliticaRegular';
+    src: url('politica-regular-webfont.eot');
+}
+
+@font-face {
+    /* This declaration targets everything else */
+    font-family: 'PoliticaRegular';
+    src: url(//:) format('no404'), url('politica-regular-webfont.woff') format('woff'), url('politica-regular-webfont.ttf') format('truetype'), url('politica-regular-webfont.svg#PoliticaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    /* This declaration targets Internet Explorer */
+    font-family: 'PoliticaBold';
+    src: url('politica-bold-webfont.eot');
+}
+
+@font-face {
+    /* This declaration targets everything else */
+    font-family: 'PoliticaBold';
+    src: url(//:) format('no404'), url('politica-bold-webfont.woff') format('woff'), url('politica-bold-webfont.ttf') format('truetype'), url('politica-bold-webfont.svg#PoliticaBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+
+/*	body {
+		width: 436px;
+		padding: 36px 22px 48px;
+	}*/
+
+body {
+	padding: 26px 0px 30px;
+	width: 100%;
+	background:#ffffff url(../img/body-bg.jpg) repeat-x;
+}
+.center {
+	clear: both;
+	position: relative;
+	overflow: hidden;
+	width: 436px;
+	margin-left: 5%;
+	margin-right: 5%;
+	background: transparent;
+}
+
+
+a { text-decoration: none; padding: 0; margin: 0;}
+ul { list-style: none; padding:0; margin:0;} 
+li { list-style: none; padding:0; margin:0;}
+img {padding:0; margin: 0; border: none;}
+
+header {
+	clear: both;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	width: 100%;
+	height: 125px;
+	background: transparent;
+	padding: 20px;
+	margin: 0 auto 30px auto;
+	text-shadow: 0 -1px 0 #f9f9f9;
+}
+header h1 a{
+	clear: both;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	font-family: 'ProximaNovaThin', sans-serif;
+	font-size: 37px;
+	line-height: 33px;
+	font-weight: 100;
+	text-transform: uppercase;
+	color: #1d1802;
+	float: left;
+	padding: 0 0px 0 0;
+	margin:  20px 30px 0 -20px;
+}
+header h2 {
+	clear: both;
+	font-family: 'ProximaNovaThin', sans-serif;
+	font-size: 10px;
+	font-weight: 100;
+	text-transform: uppercase;
+	color: #6b5a17;
+	float: left;
+	padding: 5px;
+	margin:  -20px 30px 10px 210px;
+}
+
+/*===========================================================
+	Navigation Styles
+	Author: Anthony Brown
+=============================================================*/	
+
+header nav {
+	clear: both;
+	position: relative;
+	overflow: hidden;
+	float: right;
+	width: 480px;
+	height: 30px;
+	padding: 10px;
+	margin: -40px 0 15px 0;
+	background: transparent;
+}
+header nav ul {
+	position: relative;
+	overflow: hidden;
+	clear: both;
+	float:  left;
+	width: 380px;
+	padding: 5px 0 0 0px;
+	margin: 0 5px 0 30px;
+	background: transparent;
+}
+header nav li {
+	position: relative;
+	display: inline-block;
+	padding-left: 7px;
+	margin-right: 7px;
+}
+header nav li a {
+	font-family: 'ProximaNovaRegular', sans-serif;
+	font-weight: normal;
+	font-size:16px;
+	letter-spacing: 1px;
+	color: #6b5a17;
+	text-transform: capitalize;
+
+}
+header nav li a.active{border-bottom: 1px dashed #ed145b; padding-bottom: 2px; color: #ed145b;cursor: default;}
+header nav ul li a:hover {border-bottom: 1px dashed #ed145b; padding-bottom: 1px; color: #ed145b;}
+/* =============================================================================
+	  Main styles
+	  Author: Tony Brown
+========================================================================== */
+
+
+
+/* =============================================================================
+	  Posts styles
+	  Author: Tony Brown
+========================================================================== */
+.blog-style {
+	position: relative;
+	width: 469px;
+	float: left;
+	padding: 10px 0;
+	margin: 70px 0 30px 0;	
+	-webkit-box-shadow: 3px -1px 5px 1px rgba(49,39,8,.3);
+	-moz-box-shadow: 3px -1px 5px 1px rgba(49,39,8,.3);
+	box-shadow: 3px -1px 5px 1px rgba(49,35,8,.3);
+	color: #676767;
+}
+.posts article {
+	position: relative;
+	float: left;
+	clear: both;
+	margin: 10px 0 30px 5px;
+}
+.posts h1 {
+	float: left;
+	clear: both;
+	font-family:'PoliticaRegular',sans-serif;
+	font-size: 33px;
+	letter-spacing: 1px;
+	color: #686868;
+	margin:-77px 0 30px 5px;
+}
+div.main-shadow {
+	clear: both;
+	float: left;
+	width: 459px;
+	height: 24px;
+	padding: 0;
+	margin: 0 10px 10px 10px;
+	background: url(../img/image_shadow.png)no-repeat;
+}
+div.main-image {
+	clear: both;
+	width: 459px;
+	height: 250px;
+	padding: 0;
+	margin: 10px 10px 0 10px;
+	background: url(../img/thumbs_features/459x250/2col.jpg)no-repeat;
+	border: 7px solid #f9f9f9;
+}
+
+.posts article h2, .posts article h2 a {
+	float: left;
+	clear: both;
+	font-family:'PoliticaThinRegular',sans-serif;
+	font-size: 33px;
+	letter-spacing: 1px;
+	color: #686868;
+	padding: 0;
+	margin: 0;
+}
+.posts article p {
+	width: 370px;
+	float: left;
+	clear: both;
+	font-family:'PillGothic600mgRegular', sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: .135em;
+	padding: 0;
+	margin: 0;
+}
+.posts article h5 {
+	float: left;
+	clear: both;
+	font-family: 'ProximaNovaRegular', sans-serif;
+	font-size: 14px;
+	color: #333333;
+	letter-spacing" 1px
+	padding: 15px 0 20px 0;
+	margin: 30px 0 20px 0;
+}
+	.posts article a.right-indent {
+		float:right;
+		clear: both;
+		font-family: 'ProximaNovaRegular', sans-serif;
+		font-size: 12px;
+		color: #ed145b;
+		letter-spacing" 1px
+		padding: 0 30px 20px 30px;
+		margin: 0px 10px 20px 30px;
+	}
+	.border-top {
+		width:100%;
+		height: 1px;
+		border-top: 1px solid #aaa;
+		float: left;
+		clear: both;
+		padding: 0;
+		margin: 20px 0 -20px 0;
+	}
+	.border-bottom {
+		width:100%;
+		height: 1px;
+		border-top: 1px solid #aaa;
+		float: left;
+		clear: both;
+		padding: 0;
+		margin: -25px 0 0 0;
+	}
+.read {
+	font-family:'ProximaNovaRegularItalic',sans-serif;
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #FE57A1;
+	float: right;
+	clear: both;
+	padding: 3px;
+	margin: 30px 80px 0 0;
+}
+.special {
+	font-family: 'PoliticaRegular', sans-serif;
+	height: 3px;
+	width: 5px;
+	font-size: 28px;
+	color:#a7a7a7;
+	letter-spacing: 1px;
+	margin-top: 14px;
+	padding-top: 5px;
+}
+/* =============================================================================
+	  Sidebar styles
+	  Author: Tony Brown
+========================================================================== */
+aside {
+	position: relative;
+	overflow: hidden;
+	width: 469px;
+	float: left;
+	padding: 10px 0 15px 10px;
+	margin: 50px 0 10px 10px;
+	color: #676767;
+
+}
+
+aside article h2 {
+	font-family:'PoliticaThinRegular', sans-serif;
+	font-size: 24px;
+	color: #463b11;
+	float: left;
+	clear: both;
+	padding: 0;
+	margin: 10px 20px 30px 10px;
+}
+aside article ul {
+	position: relative;
+	overflow: hidden;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+aside article ul li {
+	float: left;
+	clear: both;
+	padding: 0;
+	margin: 0;
+}
+aside article.comments ul {
+	position: relative;
+	overflow: hidden;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+aside article.comments ul li{
+	background: url(../img/comment.png)no-repeat 1px 8px;
+	padding: 5px;
+	margin: 0 0 20px 0;
+}
+	aside article.comments ul li p {
+		margin: 0 0 0 35px;
+		font-size: 14px;
+	}
+.comment-box {
+	width: 16px;
+	height: 16px;
+	float: left;
+	background: url(../img/comment.png)no-repeat;
+}
+.categories {
+	position: relative;
+	overflow: hidden;
+	float: left;
+	clear: both;
+}
+	.categories ul {padding: 0; margin: 0;}
+	.categories ul li {
+		padding: 0 0 10px 0; 
+		margin: 0 0 20px 10px;
+		width: 240px;
+		border-bottom: 1px solid #999999;
+		padding-right: 330px;
+		background: url(../img/pointer.png)no-repeat  -12px -9px;
+	}
+	.categories a h4 {
+		font-family: 'PillGothic600mgRegular', sans-serif;
+		font-size: 14px;
+		font-weight: 100;
+		color: #554b21;
+		padding: 0;
+		margin: 0 0 0 15px;	
+	}
+	li.fb-img {
+		margin: 0;
+		padding:0;
+		float: left;
+		clear: right;
+		margin: 3px 3px;
+
+	}
+	img.fb-img {
+		padding:1px;
+		-webkit-box-shadow: 0 0 1px #a2a2a2;
+		-moz-box-shadow: 0 0 1px #a2a2a2;
+		box-shadow: 0 0 1px #a2a2a2;
+	}
+
+/* =============================================================================
+		 Sidebar Form styles
+		 Author: Tony Brown
+========================================================================== */
+aside form.sidebar {
+	position: relative;
+	overflow: hidden;
+	float: left;
+	width: 340px;
+	margin-right: 10px;
+}
+	aside form button {
+		clear: both;
+		float: right;	
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		text-align: left;
+		cursor: pointer;
+		background: #575757;
+		color: #f9f9f9;
+		font-size: 12px;
+		text-shadow: 0 -1px 0 #1b1a1a;
+		padding: 4px 8px;
+		border: 1px solid #1b1a1a;
+		margin: -54px 5px 0 0;
+
+	}
+	aside form p label {
+		position: relative;
+		float: left;
+		clear: both;
+		font-family:'PillGothic600mgRegular', sans serif;
+		font-size: 16px;
+		color: #555;
+		padding: 3px;
+		margin: 13px 7px 0 0;
+	}
+	aside form input[type=text] {
+		float: left;
+		clear: both;
+		width: 200px; 
+		height: 20px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		padding-left: 5px;
+		margin: -29px 0 30px 50px;
+		background: #f9f9f9;
+		color: #4f4f4f;
+
+	}
+	aside form input:hover, aside button:hover,aside input:focus, aside button:focus {
+		-webkit-box-shadow: 0 0 2px #4f4f4f;
+		-moz-box-shadow: 0 0 2px #4f4f4f;
+		box-shadow: 0 0 2px #4f4f4f;
+	}
+/* =============================================================================
+	Single Page styles
+	Author: Tony Brown
+========================================================================== */
+.slider-wrap {
+	position: relative;
+	overflow: hidden;
+	clear: both;
+	float: left;
+	width: 100%;
+	height: inherit;
+	background: #181818;
+	margin: -45px auto 30px;
+	color: #333333;
+}
+.slider {
+	position: relative;
+	clear: both;
+	overflow: hidden;
+	float: none;
+	width: 90%;
+	height: 310px;
+	padding: 0;
+	margin: 20px auto;
+	background-color: #ffffff;
+}
+
+.thirds {
+	position: relative;
+	float: left;
+	width: 290px;
+	overflow: hidden;
+	padding: 0;
+	margin: 0 10px 50px 0;
+}
+article.thirds span.post-image1 {
+	width: 217px;
+	height: 180px;
+	background:url(../img/img_1.jpg)no-repeat;
+	clear: both;
+	float: left;
+}
+article.thirds span.post-image2 {
+	width: 217px;
+	height: 180px;
+	background:url(../img/img_2.jpg)no-repeat;
+	clear: both;
+	float: left;
+}
+article.thirds span.post-image3 {
+	width: 217px;
+	height: 180px;
+	background:url(../img/img_3.jpg)no-repeat;
+	clear: both;
+	float: left;
+}
+
+article.thirds span.img-shadow {
+	width: 217px;
+	height: 20px;
+	background: url(../img/sm-shadow.png)no-repeat;
+	clear: both;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+article.thirds h1 {
+	font-family:'PoliticaRegular', sans-serif;
+	float: left;
+	width: 237px;
+	font-size: 22px;
+	line-height: 48px;
+	color: #676767;
+}
+article.thirds h2 {
+	float: left;
+	font-family:'PoliticaRegular', sans-serif;
+	font-size: 18px;
+	color: #888888;
+	padding: 0;
+	margin: 10px 0 30px 0;
+}
+article.thirds p {
+	text-align: left;
+	float: left;
+	width: 270px;
+	font-family:'PillGothic600mgRegular', sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 1px;
+	padding: 0;
+	margin: 5px 0 20px 0;
+}
+article.thirds img.portfolio {
+	border: 7px solid #f9f9f9;
+}
+/*=======================================================
+	Plan Styles
+	Author: Anthony Brown
+=========================================================*/
+section.plan {
+	clear: both;
+	position: relative;
+	overflow: hidden;
+	float: left;
+	width: 480px;
+	margin-left: 10%;
+	margin-right: 10%;
+	background: transparent;
+	font-family:'PillGothic600mgRegular', sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	background:transparent;
+}
+section article.plan {
+	position: relative;
+	overflow: hidden;
+	width: 200px;
+	float: left;
+	padding: 30px 5px 10px 5px;
+	margin: 0 10px 30px 0;
+	background: transparent;
+}
+	section article.plan:last-child{
+		margin-right: 0;
+	}
+section article h1.plan {
+	clear: both;
+	position: relative;
+	float: left;
+	font-family: 'PoliticaBold', sans-serif;
+	font-size:26px;
+	line-height: 48px;
+	color: #676767;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 120px 0 0 55px;
+}
+section article.plan img {
+	clear: both;
+	float: left;	
+	padding: 0;
+	margin: -100px 0 20px 0;
+	width: 80%;
+}
+	section article:last-child {
+		margin-right: 0px;
+	}
+section article.plan img.launch {
+		margin: -120px 0 30px 0;
+	}
+p.launch {
+	padding: 0;
+	margin: 5px 0 15px 0;
+}
+#main article p.plan {
+	width: 160px;
+	float: left;
+	line-height: 18px;
+	letter-spacing: 1px;
+}
+section article.launch {
+	padding: 0;
+	margin: 40px 0;
+	background: transparent;
+}
+
+
+/*========================================================================
+	Skill Content
+	
+=========================================================================*/
+#main article.about {
+	position: relative;
+	overflow: hidden;
+	width: 480px;
+	float: left;
+	clear: both;
+}
+#main article.about h1{
+	font-family:'PoliticaRegular', sans-serif;
+	font-weight: normal;
+	font-size: 38px;
+	color: #676767;
+}
+
+
+ .about p {
+ 	font-family: 'PillGothic600mg', georgia, serif;
+ 	color: #676767;
+ 	font-size: 14px;
+ 	line-height: 18px;
+	text-shadow: 0 -1px 0 #f9f9f9;
+ 	margin: 5px 30px 30px 0;
+ 	padding: 5px;
+ }
+.skill-list {
+	width: 300px;
+	float: left;
+	clear: both;
+}
+	.skill-list li {
+		border-top: 1px dotted #676767;
+		border-bottom: 1px dotted #676767;
+	}
+	.skill-list a {
+		color: #676767;
+	}
+.para {text-indent: 30px;}
+
+#main article.skill-content {
+	width: 300px;
+	height: 630px;
+	background: #181818;
+	position: relative;
+	float: left;
+	clear: both;
+	font-size: 14px;
+	line-height: 18px;
+	color: #2187e7;
+	border-radius: 10px;
+	padding: 33px 40px 10px 30px;
+	margin: 0px 0 30px 0;
+
+}
+
+.col { width: 270px; position: absolute;}
+.col h3 {
+	font-family: 'PoliticaBold', sans-serif;
+	font-size: 24px;
+	line-height: 30px;
+	color: #f3f3f3;
+	text-transform: uppercase;
+	margin: -15px 130px 20px 0;
+}
+
+#skill {
+	list-style: none;
+	padding-top: 30px;
+	text-align: left;
+}
+	#skill li {
+		margin-bottom: 70px;
+		background: #111;
+		height: 5px;
+		border-radius: 7px;
+		border-left: 1px solid #111;
+		border-top: 1px solid #111;
+		border-right: 1px solid #333;
+		border-bottom: 1px solid #333;
+	}
+		#skill li em {
+			position: relative;
+			top: -30px;
+			font-family: 'PoliticaBold', sans-serif;
+			font-size: 16px;
+			line-height: 30px;
+			color: ##2187E7;
+			text-transform: uppercase;
+		}
+		.expand {
+			height: 1px;
+			margin: 2px 0;
+			background: #e4008e;
+			position: absolute;
+			box-shadow: 0px 0px 10px 1px rgba(236,0,140, 0.4);
+		}
+		
+.html5 { width: 67%; -moz-animation:html5 3s ease-out;   -webkit-animation: html5 3s ease-out;  }
+.css3  { width: 65%; -moz-animation:html5 3s ease-out;   -webkit-animation: html5 3s ease-out;  }
+.j     { width: 45%; -moz-animation:html5 3s ease-out;   -webkit-animation: html5 3s ease-out;  }
+.jquery{ width: 55%; -moz-animation:html5 3s ease-out;   -webkit-animation: html5 3s ease-out;  }
+.php   { width: 55%; -moz-animation:html5 3s ease-out;   -webkit-animation: html5 3s ease-out;  }
+.sql   { width: 55%; -moz-animation:html5 3s ease-out;   -webkit-animation: html5 3s ease-out;  }
+.as3   { width: 45%; -moz-animation:html5 3s ease-out;   -webkit-animation: html5 3s ease-out;  }
+
+@-moz-keyframes html5  { 0% { width: 0%;} 100%{ width: 60%;} }
+@-moz-keyframes css3   { 0% { width: 0%;} 100%{ width: 60%;} }
+@-moz-keyframes js 	   { 0% { width: 0%;} 100%{ width: 50%;} }
+@-moz-keyframes jquery { 0% { width: 0%;} 100%{ width: 55%;} }
+@-moz-keyframes php    { 0% { width: 0%;} 100%{ width: 45%;} }
+@-moz-keyframes sql    { 0% { width: 0%;} 100%{ width: 40%;} }
+
+@-webkit-keyframes html5  { 0% { width: 0%;} 100%{ width: 60%;} }
+@-webkit-keyframes css3   { 0% { width: 0%;} 100%{ width: 60%;} }
+@-webkit-keyframes js 	  { 0% { width: 0%;} 100%{ width: 50%;} }
+@-webkit-keyframes jquery { 0% { width: 0%;} 100%{ width: 55%;} }
+@-webkit-keyframes php    { 0% { width: 0%;} 100%{ width: 45%;} }
+@-webkit-keyframes sql    { 0% { width: 0%;} 100%{ width: 40%;} }
+@-webkit-keyframes as3    { 0% { width: 0%;} 100%{ width: 40%;} }
+
+/*========================================================================
+	Skill List
+	About Page
+	
+=========================================================================*/
+
+#main article.skill-list {
+	width: 430px;
+	float: left;
+	clear: both;
+	padding: 10px;
+}
+article.skill-list h2{
+	font-family: 'PoliticaRegular', sans-serif;
+	font-weight: normal;
+	font-size: 46px;
+	color: #676767;
+	padding: 0;
+	margin: 0 0 20px 0;
+}
+article.skill-list h4 {
+	font-family: 'PoliticaBold', sans-serif;
+	color: #2187E7;
+	text-transform: uppercase;
+	padding: 17px 0px 5px 0; 
+}
+	article.skill-list li {
+		border-top: 1px dotted #676767;
+		border-bottom: 1px dotted #676767;
+	}
+		article.skill-list li:first-child {
+			border-top: none;
+		}
+		article.skill-list li:last-child {
+			border-bottom: none;
+		}
+		
+	.skill-list a {
+		color: #676767;
+	}
+
+
+/* =============================================================================
+		 Sidebar Form styles
+		 Author: Tony Brown
+========================================================================== */
+.footer-wrap {
+	clear: both;
+	position:relative;
+
+	background: #191919;
+	padding: 0;
+	margin: 10px auto;
+}
+.footer-col {
+	overflow: hidden;
+	position: relative;
+	width: 400px;
+	float: left;
+	clear: right;
+	padding: 2px;
+	margin: 20px 25px 30px 30px;
+	font-family: 'PoliticaRegular', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 18px;
+	color: #f9f9f9;
+	background: transparent;
+}
+	.footer-col:last-child {
+		margin-right: 0;
+		margin-left: 30px;
+	}
+footer h3 {
+	font-family:'ProximaNovaExtraCondensedThin', sans-serif;
+	font-size: 28px;
+	color: #f3f3f3;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	text-shadow: 0 -1px 0 #000000;
+	padding: 0 0 10px 0;
+	margin: 10px 0 20px 0;
+}
+footer section.recent-projects h5 {
+	font-family: 'PoliticaRegular', sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 1px;
+	padding: 15px;
+	color: #f9f9f9;
+	padding: 0;
+	margin:  0;
+}
+footer section ul li {
+	display: block;
+	overflow: hidden;
+	border-top: 1px solid #494949;
+	border-bottom: 1px solid #000000;
+	padding: 15px 0;
+}
+	footer section > ul li:first-child {
+		border-top: none;
+		padding-top: 10px;
+	}
+	footer section > ul li:last-child {
+		border-bottom: none;
+		padding-bottom: 10px;
+	}
+footer section p {
+	font-family:'PillGothic600mgRegular', sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 1px;
+	padding: 0;
+	color: #f9f9f9;
+	text-shadow: 0 -1px 0 #000;
+	margin: 0;
+}
+
+footer section.recent-projects img {
+	float: left;
+	clear: both;
+	padding: 5px 10px 5px 0;
+	margin: -5px 0 5px 0;
+}
+
+footer section p.foot-meta {
+	color: #fffbb7;
+}
+footer section span.foot-meta {
+	color: #ffde77;
+}
+/* =============================================================================
+		 Footer Form styles
+		 Author: Tony Brown
+========================================================================== */
+
+.footer-wrap footer button, input, textarea {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	text-align: left;
+	cursor: pointer;
+	background: ##575757;
+	border: 1px solid #181818;
+}
+.footer-wrap footer section button {
+	color: #f9f9f9;
+	font-weight: bold;
+	font-size: 12px;
+	text-shadow: 0 -1px 0 #181818;
+	padding: 4px 8px;
+	text-transform: uppercase;
+}
+
+footer button { 
+	float: right;
+	clear: both;
+	padding: 0; 
+	margin: 0;
+	background:#222121;
+}
+
+.footer-wrap footer input, .footer-wrap footer textarea {
+	background: #eee;
+	border: 1px solid #101010;
+	*border: none;
+	padding: 7px;
+	background: #141414;
+	background: -webkit-gradient(linear, left top, left bottom, from
+		(#141414), to(#FF0000));
+	background: -webkit-linear-gradient(top, #141414, #181818);
+	background: -moz-linear-gradient(top, #141414, #181818);
+	background: linear-gradient(top, #141414, #181818);
+	color:#f3f3f3;
+	text-shadow: 0 -1px 0 #000;
+	margin-bottom: 15px;
+}
+
+.footer-wrap footer textarea, #time {
+	width: 370px;
+}
+.footer-wrap footer textarea {
+	height: 186px;
+}
+.footer-wrap input:hover, .footer-wrap textarea:hover, .footer-wrap button:hover,.footer-wrap input:focus, .footer-wrap textarea:focus, .footer-wrap button:focus {
+	-webkit-box-shadow: 0 0 2px #f3f3f3;
+	-moz-box-shadow: 0 0 2px #f3f3f3;
+	box-shadow: 0 0 2px #f3f3f3;
+}
+
+.footer-wrap footer button:hover {
+	background: #f3f3f3;
+	color: #131313;
+}
+footer section input[type=text] {
+	float: left;
+	clear: both;
+	width: 286px; 
+	margin-right: 5px;
+}
+
+.twitter-section span {
+	color: #fffbb7;
+}
+.twitter-section span a, footer section a {
+	color: #ffde77;
+}
+/*======================================================
+	Bottom Footer
+========================================================*/
+#siteInfo {
+	overflow: hidden;
+	width: 100%;
+	margin: 0;
+	clear: both;
+	float: left;
+	text-shadow: 0 0 0 #000;
+	margin:0;
+}
+#siteInfo nav {
+	width: 480px;
+	height: 30px;
+	overflow: hidden;
+	position:relative;
+	float:left;
+	clear: both;
+	padding: 0;
+	margin: -120px 0 30px 0;
+	background: transparent;
+}
+#siteInfo nav ul {
+	overflow: hidden;
+	width: 480px;
+	height: 40px;
+	float: right;
+	padding: 0;
+	margin: 0 0 30px 0;
+	background: transparent;
+}
+
+#siteInfo ul li {
+	float: left;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	padding: 0 5px 0 0;
+	margin: 0 5px 0 5px;
+	border-right: 1px solid #131313;
+}
+	#siteInfo ul li:last-child {
+		border-right: none;
+	} 
+#siteInfo nav ul li a{
+	text-transform: uppercase;
+	font-family: Times, serif;
+	font-size: 14px;
+	color: #131313;
+	padding: 0; 
+	margin: 0 5px 0 0 ;
+	text-decoration: none;
+}
+	#siteInfo nav ul.footer-nav li a:hover {
+		border-bottom: 1px dashed #ed145b; 
+		padding-bottom: 3px; 
+		color: #ed145b;
+		cursor: pointer;
+	}
+		#siteInfo nav ul.footer-nav li a.active{
+			border-bottom: 1px dashed #ed145b; 
+			padding-bottom: 2px; 
+			color: #ed145b;
+			cursor: default;
+		}
+		
+#siteInfo footer p {
+	float: left;
+	clear: both;
+	color:#141414;
+	font-size: 12px;
+	padding: 5px;
+	margin: 0;
+}
+#siteInfo ul li a.last {
+	border-right: none;
+}
+#siteInfo footer h6 {
+	clear: both;
+	float: left;
+	color: #131313;
+	font-size: 12px;
+	margin: 85px 0 0 0;
+
+}
+
+/* =============================================================================
+   Non-semantic helper classes
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+
+/* Hide for both screenreaders and browsers:
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden { display: none; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: by Jon Neal.
+  www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: nicolasgallagher.com/micro-clearfix-hack/ */ 
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
